@@ -1,4 +1,4 @@
-import 'package:cruise_buddy/UI/Screens/Home/home_screen.dart';
+import 'package:cruise_buddy/UI/Screens/On%20Boarding/onboardingscreen_one.dart';
 import 'package:cruise_buddy/core/constants/colors/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
@@ -35,14 +35,14 @@ class _SplashScreenState extends State<SplashScreen>
       }
     });
 
-    // Future.delayed(const Duration(milliseconds: 2600), () {
-    //   if (mounted) {
-    //     Navigator.push(
-    //       context,
-    //       MaterialPageRoute(builder: (context) => const HomeScreen()),
-    //     );
-    //   }
-    // });
+    Future.delayed(const Duration(milliseconds: 2600), () {
+      if (mounted) {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const OnboardingScreenOne()),
+        );
+      }
+    });
   }
 
   @override
