@@ -1,4 +1,4 @@
-import 'package:cruise_buddy/UI/Screens/splash_screen.dart';
+import 'package:cruise_buddy/UI/Screens/Splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

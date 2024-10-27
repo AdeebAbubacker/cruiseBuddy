@@ -1,4 +1,4 @@
-import 'package:cruise_buddy/UI/Screens/home_screen.dart';
+import 'package:cruise_buddy/UI/Screens/Home/home_screen.dart';
 import 'package:cruise_buddy/core/constants/colors/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';

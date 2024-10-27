@@ -1,4 +1,4 @@
-import 'package:cruise_buddy_test/onboardingscreen_three.dart';
+import 'package:cruise_buddy/UI/Screens/On%20Boarding/onboardingscreen_three.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingScreenTwo extends StatefulWidget {
