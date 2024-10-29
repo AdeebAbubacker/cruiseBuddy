@@ -1,4 +1,5 @@
 import 'package:cruise_buddy/UI/Screens/On%20Boarding/onboardingscreen_three.dart';
+import 'package:cruise_buddy/core/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingScreenTwo extends StatefulWidget {
@@ -107,10 +108,7 @@ class _OnboardingScreenTwoState extends State<OnboardingScreenTwo>
                               icon: const Icon(Icons.arrow_forward,
                                   color: Colors.white),
                               onPressed: () {
-                                Navigator.push(context,
-                                    MaterialPageRoute(builder: (context) {
-                                  return const OnboardingScreenThree();
-                                }));
+                                   AppRoutes.navigateToOnboardingThree(context);
                               },
                             ),
                           ),
@@ -144,3 +142,6 @@ class _OnboardingScreenTwoState extends State<OnboardingScreenTwo>
     );
   }
 }
+
+
+

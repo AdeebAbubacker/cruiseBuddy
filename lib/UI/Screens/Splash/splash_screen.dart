@@ -1,5 +1,6 @@
 import 'package:cruise_buddy/UI/Screens/On%20Boarding/onboardingscreen_one.dart';
 import 'package:cruise_buddy/core/constants/colors/app_colors.dart';
+import 'package:cruise_buddy/core/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:cruise_buddy/UI/Widgets/wave_clipper/first_wave_clipper.dart';
@@ -37,10 +38,7 @@ class _SplashScreenState extends State<SplashScreen>
 
     Future.delayed(const Duration(milliseconds: 2600), () {
       if (mounted) {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => const OnboardingScreenOne()),
-        );
+        AppRoutes.navigateToOnboardingOne(context);
       }
     });
   }
@@ -140,5 +138,3 @@ class _SplashScreenState extends State<SplashScreen>
     );
   }
 }
-
-
