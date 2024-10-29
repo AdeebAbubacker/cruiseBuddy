@@ -1,3 +1,4 @@
+import 'package:cruise_buddy/core/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingScreenThree extends StatefulWidget {
@@ -16,7 +17,7 @@ class _OnboardingScreenThreeState extends State<OnboardingScreenThree>
     super.initState();
     _fadeController = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 1700),
+      duration: const Duration(milliseconds: 800),
     );
     _fadeAnimation = CurvedAnimation(
       parent: _fadeController,
@@ -104,7 +105,9 @@ class _OnboardingScreenThreeState extends State<OnboardingScreenThree>
                             child: IconButton(
                               icon: const Icon(Icons.arrow_forward,
                                   color: Colors.white),
-                              onPressed: () {},
+                              onPressed: () {
+                                AppRoutes.navigateToLoginScreen(context);
+                              },
                             ),
                           ),
                         ],

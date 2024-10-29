@@ -1,3 +1,4 @@
+import 'package:cruise_buddy/UI/Screens/Auth/login_screens.dart';
 import 'package:cruise_buddy/UI/Screens/On%20Boarding/onboardingscreen_one.dart';
 import 'package:cruise_buddy/UI/Screens/On%20Boarding/onboardingscreen_three.dart';
 import 'package:cruise_buddy/UI/Screens/On%20Boarding/onboardingscreen_two.dart';
@@ -22,6 +23,13 @@ class AppRoutes {
     return Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => const OnboardingScreenThree()),
+    );
+  }
+
+  static navigateToLoginScreen(BuildContext context) {
+    return Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const LoginScreen()),
     );
   }
 }
