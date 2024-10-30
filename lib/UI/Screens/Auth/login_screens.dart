@@ -16,6 +16,7 @@ class _LoginScreenState extends State<LoginScreen> {
   TextEditingController passwordController = TextEditingController();
   FocusNode emailFocusNode = FocusNode();
   FocusNode passwordFocusNode = FocusNode();
+  bool isTextVisible = false;
   bool isChecked = false;
 
   @override
@@ -95,9 +96,18 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 const SizedBox(height: 12),
                 TextField(
+                  obscureText: isTextVisible,
                   decoration: InputDecoration(
                       prefixIcon: const Icon(Icons.lock_open_outlined),
-                      suffixIcon: const Icon(Icons.visibility),
+                      suffixIcon: GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              isTextVisible = !isTextVisible;
+                            });
+                          },
+                          child: Icon(isTextVisible
+                              ? Icons.visibility
+                              : Icons.visibility_off)),
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(32))),
                   controller: passwordController,
