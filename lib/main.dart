@@ -1,7 +1,8 @@
 import 'package:cruise_buddy/UI/Screens/Splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
