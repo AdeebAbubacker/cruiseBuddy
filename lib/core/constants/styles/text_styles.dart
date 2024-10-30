@@ -46,9 +46,14 @@ class TextStyles {
     fontWeight: FontWeight.w400,
     color: const Color(0xFF191D23),
   );
-  static final TextStyle ubuntu16blue23w400 = ubuntu.copyWith(
+  static final TextStyle ubuntu16blue86w400 = ubuntu.copyWith(
     fontSize: 16,
     fontWeight: FontWeight.w400,
-  color: const Color(0xFF1F8386),
+    color: const Color(0xFF1F8386),
+  );
+ static final TextStyle ubuntu32blue86w700 = ubuntu.copyWith(
+    fontSize: 32,
+    fontWeight: FontWeight.w700,
+    color: const Color(0xFF1F8386),
   );
 }

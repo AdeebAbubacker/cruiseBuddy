@@ -138,7 +138,7 @@ class LoginScreen extends StatelessWidget {
                     ),
                     TextSpan(
                       text: " Create an account",
-                      style: TextStyles.ubuntu16blue23w400,
+                      style: TextStyles.ubuntu16blue86w400,
                     ),
                   ],
                 ),
