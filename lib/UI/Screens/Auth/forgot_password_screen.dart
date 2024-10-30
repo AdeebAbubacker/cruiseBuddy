@@ -15,7 +15,9 @@ class ForgotPasswordScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _hideKeyboard(),
+      onTap: () {
+        _hideKeyboard();
+      },
       child: Scaffold(
         resizeToAvoidBottomInset: false,
         body: Padding(
@@ -103,13 +105,22 @@ class ForgotPasswordScreen extends StatelessWidget {
                           hintTextColor: Colors.grey,
                           showHintText: true,
                           activeFieldBorderGradient: const LinearGradient(
-                            colors: [Colors.blue, Colors.blue],
+                            colors: [
+                              Colors.blue,
+                              Colors.blue,
+                            ],
                           ),
                           filledFieldBorderGradient: const LinearGradient(
-                            colors: [Colors.black, Colors.black],
+                            colors: [
+                              Colors.black,
+                              Colors.black,
+                            ],
                           ),
                           defaultFieldBorderGradient: const LinearGradient(
-                            colors: [Colors.grey, Colors.grey],
+                            colors: [
+                              Colors.grey,
+                              Colors.grey,
+                            ],
                           ),
                         ),
                         maxLength: 4,
