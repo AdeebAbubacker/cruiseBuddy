@@ -1,12 +1,11 @@
-
-
-
 import 'package:cruise_buddy/core/constants/styles/text_styles.dart';
 import 'package:flutter/material.dart';
 
 class FullWidthBlueButton extends StatelessWidget {
+  final String text;
   const FullWidthBlueButton({
     super.key,
+    required this.text,
   });
 
   @override
@@ -22,7 +21,7 @@ class FullWidthBlueButton extends StatelessWidget {
         ),
         onPressed: () {},
         child: Text(
-          "Verify",
+          text,
           style: TextStyles.ubuntu16whiteFFw500,
         ),
       ),

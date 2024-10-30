@@ -1,3 +1,4 @@
+import 'package:cruise_buddy/UI/Widgets/Button/full_width_bluebutton.dart';
 import 'package:cruise_buddy/core/constants/styles/text_styles.dart';
 import 'package:cruise_buddy/core/routes/app_routes.dart';
 import 'package:flutter/material.dart';
@@ -86,18 +87,8 @@ class LoginScreen extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 12),
-              SizedBox(
-                width: double.infinity,
-                height: 50,
-                child: ElevatedButton(
-                  style: ButtonStyle(
-                    backgroundColor: WidgetStateProperty.all(
-                      const Color(0xFF1F8386),
-                    ),
-                  ),
-                  onPressed: () {},
-                  child: Text("Login", style: TextStyles.ubuntu16whiteFFw500),
-                ),
+              const FullWidthBlueButton(
+                text: 'Login',
               ),
               const SizedBox(height: 12),
               Row(

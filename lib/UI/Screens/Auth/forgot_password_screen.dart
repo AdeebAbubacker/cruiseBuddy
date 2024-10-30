@@ -141,7 +141,9 @@ class ForgotPasswordScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 50),
-              const FullWidthBlueButton(),
+              const FullWidthBlueButton(
+                text: 'Verify',
+              ),
               const SizedBox(
                 height: 12,
               ),
