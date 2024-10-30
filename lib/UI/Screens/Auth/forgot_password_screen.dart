@@ -17,6 +17,7 @@ class ForgotPasswordScreen extends StatelessWidget {
     return GestureDetector(
       onTap: () => _hideKeyboard(),
       child: Scaffold(
+        resizeToAvoidBottomInset: false,
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 30),
           child: Column(
