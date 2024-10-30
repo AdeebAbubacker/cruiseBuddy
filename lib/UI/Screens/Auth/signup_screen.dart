@@ -14,6 +14,7 @@ class SignupScreen extends StatefulWidget {
 class _SignupScreenState extends State<SignupScreen> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+  TextEditingController retypepasswordController = TextEditingController();
 
   bool isTextVisible = false;
   bool isChecked = false;
@@ -127,7 +128,7 @@ class _SignupScreenState extends State<SignupScreen> {
                               : Icons.visibility_off)),
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(32))),
-                  controller: passwordController,
+                  controller: retypepasswordController,
                   focusNode: reTypepasswordFocusNode,
                 ),
                 const SizedBox(height: 12),
