@@ -1,3 +1,4 @@
+import 'package:cruise_buddy/UI/Screens/Auth/forgot_password_screen.dart';
 import 'package:cruise_buddy/UI/Screens/Auth/login_screens.dart';
 import 'package:cruise_buddy/UI/Screens/On%20Boarding/onboardingscreen_one.dart';
 import 'package:cruise_buddy/UI/Screens/On%20Boarding/onboardingscreen_three.dart';
@@ -30,6 +31,13 @@ class AppRoutes {
     return Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => const LoginScreen()),
+    );
+  }
+
+  static navigateToForgotPasswordScreen(BuildContext context) {
+    return Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) =>  ForgotPasswordScreen()),
     );
   }
 }

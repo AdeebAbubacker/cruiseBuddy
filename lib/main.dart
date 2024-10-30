@@ -1,4 +1,4 @@
-import 'package:cruise_buddy/UI/Screens/Auth/forgot_password_screen.dart';
+import 'package:cruise_buddy/UI/Screens/Splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: ForgotPasswordScreen(),
+      home: const SplashScreen(),
     );
   }
 }

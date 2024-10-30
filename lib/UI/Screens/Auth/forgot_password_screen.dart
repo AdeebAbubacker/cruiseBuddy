@@ -79,6 +79,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       OtpPinField(
+                        autoFocus: false,
                         fieldHeight: 50,
                         fieldWidth: 60,
                         key: _otpPinFieldController,

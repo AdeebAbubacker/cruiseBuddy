@@ -1,4 +1,5 @@
 import 'package:cruise_buddy/core/constants/styles/text_styles.dart';
+import 'package:cruise_buddy/core/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -60,10 +61,14 @@ class LoginScreen extends StatelessWidget {
                     style: TextStyles.ubuntu16black23w500,
                   ),
                   const Spacer(),
-                  Text(
-                    "Forgot Password?",
-                    style: TextStyles.ubuntu12blue23w500,
-                  )
+                  TextButton(
+                      onPressed: () {
+                        AppRoutes.navigateToForgotPasswordScreen(context);
+                      },
+                      child: Text(
+                        "Forgot Password?",
+                        style: TextStyles.ubuntu12blue23w500,
+                      ))
                 ],
               ),
               const SizedBox(height: 12),
@@ -128,7 +133,7 @@ class LoginScreen extends StatelessWidget {
                       child: Image.asset("assets/Google.png"),
                     )),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               RichText(
                 text: TextSpan(
                   children: [
@@ -143,7 +148,7 @@ class LoginScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 40)
+              const SizedBox(height: 40)
             ],
           ),
         ),
