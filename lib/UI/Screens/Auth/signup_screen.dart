@@ -1,7 +1,6 @@
 import 'package:cruise_buddy/UI/Widgets/Button/full_width_bluebutton.dart';
 import 'package:cruise_buddy/core/constants/styles/text_styles.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:msh_checkbox/msh_checkbox.dart';
 
 class SignupScreen extends StatefulWidget {
@@ -21,9 +20,7 @@ class _SignupScreenState extends State<SignupScreen> {
   FocusNode emailFocusNode = FocusNode();
   FocusNode passwordFocusNode = FocusNode();
   FocusNode reTypepasswordFocusNode = FocusNode();
-  void _hideKeyboard() {
-    SystemChannels.textInput.invokeMethod('TextInput.hide');
-  }
+
 
   @override
   Widget build(BuildContext context) {
