@@ -59,8 +59,11 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(height: 12),
               TextField(
                 decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(32))),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(32),
+                  ),
+                  prefixIcon: const Icon(Icons.mail_outline_rounded),
+                ),
               ),
               const SizedBox(height: 18),
               Row(
@@ -83,6 +86,8 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(height: 12),
               TextField(
                 decoration: InputDecoration(
+                    prefixIcon: const Icon(Icons.lock_open_outlined),
+                    suffixIcon: const Icon(Icons.visibility),
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(32))),
               ),
