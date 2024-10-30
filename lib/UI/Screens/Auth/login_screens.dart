@@ -2,9 +2,17 @@ import 'package:cruise_buddy/UI/Widgets/Button/full_width_bluebutton.dart';
 import 'package:cruise_buddy/core/constants/styles/text_styles.dart';
 import 'package:cruise_buddy/core/routes/app_routes.dart';
 import 'package:flutter/material.dart';
+import 'package:msh_checkbox/msh_checkbox.dart';
 
-class LoginScreen extends StatelessWidget {
+class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
+
+  @override
+  State<LoginScreen> createState() => _LoginScreenState();
+}
+
+class _LoginScreenState extends State<LoginScreen> {
+  bool isChecked = false;
 
   @override
   Widget build(BuildContext context) {
@@ -81,7 +89,22 @@ class LoginScreen extends StatelessWidget {
               const SizedBox(height: 12),
               Row(
                 children: [
-                  Checkbox(value: false, onChanged: (_) {}),
+                  MSHCheckbox(
+                    size: 25,
+                    value: isChecked,
+                    colorConfig: MSHColorConfig.fromCheckedUncheckedDisabled(
+                      checkedColor: Colors.blue,
+                    ),
+                    style: MSHCheckboxStyle.stroke,
+                    onChanged: (selected) {
+                      setState(() {
+                        isChecked = selected;
+                      });
+                    },
+                  ),
+                  const SizedBox(
+                    width: 15,
+                  ),
                   Text("Keep me signed in",
                       style: TextStyles.ubuntu16black23w300),
                 ],
